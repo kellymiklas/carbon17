@@ -200,7 +200,8 @@ body {
 .PINbutton {
     float:left;
     width: 30%;
-    padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+    height: 20%;
+    padding-bottom: 20%; /* = width for a 1:1 aspect ratio */
     margin:1.66%;
     background: #ededed;
 	color: #7e7e7e;
