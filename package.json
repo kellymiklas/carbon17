@@ -10,5 +10,9 @@
     "grunt-contrib-concat": "*",
     "grunt-contrib-uglify": "*",
     "jsdoc": "*"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "serialport": "^4.0.7"
   }
 }
