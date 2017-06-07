@@ -64,7 +64,7 @@ var h = window.innerHeight;
 var init = 0;
 
 // number of tries
-var tries = 0;
+var tries = 1;
 var first = 0;
 var second = 0;
 var calibrationComplete = 0;
@@ -78,9 +78,9 @@ var addedCounter = 0;
 //how many ints added to the secret code
 //hard coded for now, later during initiate calibration
 //it will set the secret password
-var secretCodeCounter = 3;
+var secretCodeCounter = 4;
 //hard coded for now
-var secretCode = [1, 6, 7];
+var secretCode = [7, 8, 2, 2];
 var mouseDown = 0;
 
 var initiateCalibration = function() {
@@ -93,7 +93,7 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
     for(i = secretCode.length; i--;) {
         if(secretCode[i] !== sectorsVisited[i]){
             tries++;
-            if(tries > 5){
+            if(tries > 3){
                 alert("You have exceded your tries. Now exiting.");
                 exit();
             }
@@ -114,7 +114,6 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
 }
 
 var addToArray = function(sector) {
-    if (sectorsVisited[sectorsVisited.length - 1] != sector) {
         sectorsVisited.push(sector);
         addedCounter++;
         toggleStatus();
@@ -123,7 +122,7 @@ var addToArray = function(sector) {
         if(addedCounter == secretCodeCounter){
             compareCodes(secretCode, sectorsVisited, sector);
         }
-    }
+
 }
 
 var checkIfCalibrationComplete = function(calibratedSectors) {
