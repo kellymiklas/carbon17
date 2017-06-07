@@ -166,22 +166,6 @@ body {
 	text-align: center;
 	border: 1px solid #d5d5d5;
 }
-.PINbutton {
-	background: #ededed;
-	color: #7e7e7e;
-	border: none;
-	/*background: linear-gradient(to bottom, #fafafa, #eaeaea);
-      -webkit-box-shadow: 0px 2px 2px -0px rgba(0,0,0,0.3);
-         -moz-box-shadow: 0px 2px 2px -0px rgba(0,0,0,0.3);
-              box-shadow: 0px 2px 2px -0px rgba(0,0,0,0.3);*/
-	border-radius: 50%;
-	font-size: 1.5em;
-	text-align: center;
-	width: 30%;
-	height: 30%;
-	margin: 7px 20px;
-	padding: 0;
-}
 .clear, .enter {
 	font-size: 1em;
 }
@@ -210,5 +194,24 @@ body {
       -webkit-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
          -moz-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
               box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+}
+
+
+.PINbutton {
+    float:left;
+    width: 30%;
+    padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background: #ededed;
+	color: #7e7e7e;
+	border: none;
+	/*background: linear-gradient(to bottom, #fafafa, #eaeaea);
+      -webkit-box-shadow: 0px 2px 2px -0px rgba(0,0,0,0.3);
+         -moz-box-shadow: 0px 2px 2px -0px rgba(0,0,0,0.3);
+              box-shadow: 0px 2px 2px -0px rgba(0,0,0,0.3);*/
+	border-radius: 50%;
+	font-size: 1.5em;
+	text-align: center; 
+    
 }
 
