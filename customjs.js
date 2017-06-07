@@ -8,11 +8,11 @@ var counter = 0;
 function toggleStatus() {
     counter++;
     if (counter == 1) {
-        document.getElementById('statusImg1').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
+        //document.getElementById('statusImg1').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
     } else if (counter == 2) {
-        document.getElementById('statusImg2').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
+       // document.getElementById('statusImg2').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
     } else if (counter == 3) {
-        document.getElementById('statusImg3').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
+        //document.getElementById('statusImg3').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
 
     }
 }
@@ -98,7 +98,8 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
                 exit();
             }
             else{
-                resetEyes();
+                // resetEyes();
+                alert("Wrong entry " + secretCode);
                 sectorsVisited.length = 0;
                 addedCounter = 0;
                 counter = 0;
@@ -134,7 +135,6 @@ var checkIfCalibrationComplete = function(calibratedSectors) {
     alert("Calibration complete. Please enter passcode.");
     calibrationComplete = 1;
     removeLayers();
-    window.location.replace("PIN.html");
     return true;
 }
 
@@ -156,6 +156,7 @@ var trackSector = function(sector) {
             removeLayers();
             string = domID + sector;
             showhide(string);
+            loadPIN();
             calibratedSectors[sector-1]++;
             if(checkIfCalibrationComplete(calibratedSectors) == true){
                 console.log("calibration complete");
@@ -290,6 +291,17 @@ var main = function() {
 
 
 window.onbeforeunload = function() {
-    //webgazer.end(); //Uncomment if you want to save the data even if you reload the page.
+    webgazer.end(); //Uncomment if you want to save the data even if you reload the page.
     window.localStorage.clear(); //Comment out if you want to save data across different sessions
+}
+
+var loadPIN = function() {
+    var xhr= new XMLHttpRequest();
+    xhr.open('GET', 'PIN.html', true);
+    xhr.onreadystatechange= function() {
+        if (this.readyState!==4) return;
+        if (this.status!==200) return;
+        document.getElementById('PIN_section').innerHTML= this.responseText;
+    };
+    xhr.send();
 }
