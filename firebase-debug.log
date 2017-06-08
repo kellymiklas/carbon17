@@ -1,0 +1,64 @@
+[debug] [2017-06-07T23:17:27.359Z] ----------------------------------------------------------------------
+[debug] [2017-06-07T23:17:27.362Z] Command:      /usr/local/Cellar/node/8.0.0_1/bin/node /usr/local/bin/firebase serve
+[debug] [2017-06-07T23:17:27.362Z] CLI Version:  3.9.1
+[debug] [2017-06-07T23:17:27.362Z] Platform:     darwin
+[debug] [2017-06-07T23:17:27.362Z] Node Version: v8.0.0
+[debug] [2017-06-07T23:17:27.363Z] Time:         Wed Jun 07 2017 19:17:27 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:27.363Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-07T23:17:27.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-07T23:17:27.376Z] > authorizing via signed-in user
+[debug] [2017-06-07T23:17:27.379Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-06-07T23:17:27.379Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/rvfW9OKclT7mXZwaKwA86ndB68MFEmGZoZ5cCyiP9ZBsfx9gDRdSUzy7slkEFgCm',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jun 07 2017 19:17:27 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:27.832Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-07T23:17:27.847Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/my-project-1475998123091  
+ Wed Jun 07 2017 19:17:27 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:28.435Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-07T23:17:28.436Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/my-project-1475998123091/tokens  
+ Wed Jun 07 2017 19:17:28 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:28.998Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/kellymiklas/Desktop/side_projects/C1 Hackathons/carbon17'...
+[info] 
+[debug] [2017-06-07T23:17:29.001Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/my-project-1475998123091  
+ Wed Jun 07 2017 19:17:29 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:29.668Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-07T23:17:29.668Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/459316056343/clients/_:getWebAppConfig  
+ Wed Jun 07 2017 19:17:29 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:30.375Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-07T23:17:30.395Z] TypeError: Cannot read property 'public' of undefined
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-06-07T23:17:40.439Z] ----------------------------------------------------------------------
+[debug] [2017-06-07T23:17:40.441Z] Command:      /usr/local/Cellar/node/8.0.0_1/bin/node /usr/local/bin/firebase serve
+[debug] [2017-06-07T23:17:40.441Z] CLI Version:  3.9.1
+[debug] [2017-06-07T23:17:40.441Z] Platform:     darwin
+[debug] [2017-06-07T23:17:40.441Z] Node Version: v8.0.0
+[debug] [2017-06-07T23:17:40.442Z] Time:         Wed Jun 07 2017 19:17:40 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:40.442Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-07T23:17:40.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-07T23:17:40.454Z] > authorizing via signed-in user
+[debug] [2017-06-07T23:17:40.457Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/my-project-1475998123091  
+ Wed Jun 07 2017 19:17:40 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:41.176Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-07T23:17:41.177Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/my-project-1475998123091/tokens  
+ Wed Jun 07 2017 19:17:41 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:42.003Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/kellymiklas/Desktop/side_projects/C1 Hackathons/carbon17'...
+[info] 
+[debug] [2017-06-07T23:17:42.007Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/my-project-1475998123091  
+ Wed Jun 07 2017 19:17:42 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:42.494Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-07T23:17:42.495Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/459316056343/clients/_:getWebAppConfig  
+ Wed Jun 07 2017 19:17:42 GMT-0400 (EDT)
+[debug] [2017-06-07T23:17:42.930Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-07T23:17:42.944Z] TypeError: Cannot read property 'public' of undefined
+[error] 
+[error] Error: An unexpected error has occurred.
