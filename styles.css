@@ -120,8 +120,8 @@ h {
 	height: 80px;
 }
 
-.footer button{
-	margin-top: .5%;
+.row button{
+	margin-bottom: .5%;
 	float: left;
 	margin-left: 5%;
 	opacity: 1 !important;
@@ -132,7 +132,7 @@ h {
 	padding-right: 25px;
 }
 
-.footer button:hover{
+.row button:hover{
 	background-color: #ff2424;
 }
 
