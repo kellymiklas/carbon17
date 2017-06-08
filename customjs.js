@@ -100,7 +100,7 @@ var addedCounter = 0;
 //it will set the secret password
 var secretCodeCounter = 4;
 //hard coded for now
-var secretCode = [7, 8, 2, 2];
+var secretCode = [3, 3, 7, 1];
 var mouseDown = 0;
 
 var initiateCalibration = function() {
