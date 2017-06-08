@@ -30,8 +30,6 @@ function unloadPIN() {
         block.style.display = 'none';
    /* var block2 = document.getElementById('junk');
         block2.style.display = 'none'; */
-    var block3 = document.getElementById('buttonDiv');
-        block3.style.display = 'none';
     var block4 = document.getElementById('overlay');
         block4.style.display = 'none';
 }
@@ -117,7 +115,6 @@ var removeIndexDivs = function() {
     document.getElementById("calibrate").remove();
 	document.getElementById("indexNavbar").remove();
 	document.getElementById("buttonDiv").remove();
-    document.getElementById("junk").remove();
 }
 
 var compareCodes = function(secretCode, sectorsVisited, sector) {
