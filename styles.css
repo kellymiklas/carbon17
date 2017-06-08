@@ -261,6 +261,19 @@ img {
     margin: 0 auto;
 }
 
+.underlines {
+    margin-top: -40px;
+}
+
+/*
+.asterisks  {
+    margin-left: -10px;
+}
+*/
+
+stroke-outer {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 body {
 	background-image: url("background.jpg") !important;
@@ -375,3 +388,5 @@ body {
 .PINtext    {
     vertical-align: middle;
 }
+
+* { border: 1px solid black; }

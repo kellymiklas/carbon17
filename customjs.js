@@ -97,8 +97,10 @@ var initiateCalibration = function() {
 }
 
 var removeIndexDivs = function() {
-    document.getElementById("calibrate").remove();
-	document.getElementById("indexNavbar").remove();
+    showhide("junk");
+    showhide("indexNavbar");
+    showhide("calibrate");
+    
 }
 
 var compareCodes = function(secretCode, sectorsVisited, sector) {
