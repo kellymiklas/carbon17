@@ -102,12 +102,21 @@ h {
     background-color: #00ff00;
 }
 */
+
+#buttonDiv{
+	margin: auto;
+	height: 40px;
+	width: 100px;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #004977;
     position: fixed; /* Set the navbar to fixed position */
     top: 37px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+	border-bottom-color: white !important;
+	border-bottom-width: 2px !important;
 
 }
 

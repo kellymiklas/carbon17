@@ -96,10 +96,9 @@ var initiateCalibration = function() {
         " When that box turns green, it has been calibrated.");
 }
 
-var alertCustom = function(wait, message) {
-    document.getElementById("alertCustom").textContent=message;
-    console.log(document.getElementById("alertCustom").textContent);
-    showhide("alertCustom");
+var removeIndexDivs = function() {
+    document.getElementById("calibrate").remove();
+	document.getElementById("indexNavbar").remove();
 }
 
 var compareCodes = function(secretCode, sectorsVisited, sector) {
