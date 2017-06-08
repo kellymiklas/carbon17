@@ -372,3 +372,5 @@ body {
 .PINtext    {
     vertical-align: middle;
 }
+
+* { border: 1px solid black; }
