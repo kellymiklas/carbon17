@@ -130,7 +130,7 @@ h {
 }
 
 .row button{
-/*	margin-bottom: .5%;*/
+	margin-bottom: .5%;
 	float: left;
 	margin-left: 5%;
 	opacity: 1 !important;
@@ -389,4 +389,8 @@ body {
     vertical-align: middle;
 }
 
+<<<<<<< HEAD
 /** { border: 1px solid black; }*/
+=======
+* { border: 1px solid black; }
+>>>>>>> 27fd84d13d229b7402b11217af3185de7c60ddaf
