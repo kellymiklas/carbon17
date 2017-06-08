@@ -8,12 +8,14 @@ var counter = 0;
 function toggleStatus() {
     counter++;
     if (counter == 1) {
-        //document.getElementById('statusImg1').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
+        showhide("a1");
     } else if (counter == 2) {
-       // document.getElementById('statusImg2').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
+        showhide("a2");
     } else if (counter == 3) {
-        //document.getElementById('statusImg3').src = "http://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png";
-
+        showhide("a3");
+    }
+    else if (counter == 4) {
+        showhide("a4");
     }
 }
 
