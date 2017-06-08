@@ -104,15 +104,13 @@ h {
 /*    overflow: hidden;*/
     background-color: #004977;
     position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    top: 37px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
 
-.sidebar {
+#bottomBar {
     overflow: hidden;
-    background-color: #004977;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    background-color: #506CE8;
     width: 100%; /* Full width */
 }
 
@@ -120,6 +118,48 @@ h {
     overflow: hidden;
     background-color: #002f4d;
     width: 100%; /* Full width */
+}
+
+#left{
+	text-align: center;
+	float:left;
+	width:30%;
+	height: 450px;
+	overflow:hidden;
+	margin-left: 18%;
+	background-color: #d5d5d5;
+}
+
+#right{
+	text-align: center;
+	float:right;
+	width:30%;
+	height: 450px;
+	overflow:hidden;
+	margin-right: 18%;
+	background-color: #d5d5d5;
+} 
+
+#bottomLeft{
+	text-align: center;
+	float:left;
+	width:30%;
+	height: 150px;
+	overflow:hidden;
+	margin-top: 1%;
+	margin-left: 18%;
+	background-color: #d5d5d5;
+}
+
+#bottomRight{
+	text-align: center;
+	float:right;
+	width:30%;
+	height: 150px;
+	overflow:hidden;
+	margin-top: 1%;
+	margin-right: 18%;
+	background-color: #d5d5d5;
 }
 
 accepted {
