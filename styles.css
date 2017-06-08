@@ -27,7 +27,8 @@
 .fullBodyImg {
 	height: 100%;
 	width: 100%;
-	
+	vertical-align: top;
+    display:block;
 }
 
 .fullBodyImg img {
@@ -224,6 +225,7 @@ body {
 	font-size: 4vw;
 	text-align: center; 
     float:left;
+    overflow: hidden;
 }
 
 .PINbox {
@@ -233,9 +235,12 @@ body {
 	font-size: 6em;
 	text-align: center;
 	border: 1px solid #d5d5d5;
+    overflow: hidden;
 }
 
 .PINbuffer { 
     margin-top:30px;
     margin-bottom: 30px
 }
+
+*{ border: 1px solid red; }
