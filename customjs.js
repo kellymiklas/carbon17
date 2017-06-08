@@ -146,10 +146,19 @@ var trackSector = function(sector) {
     for (i = 0; i < 9; i++) {
         if (i != sector - 1) {
             sectorCounters[i] = 0;
+            if(calibrationComplete==1){
+                var button = document.getElementById("button"+(i+1));
+                button.classList.remove("toggleable-class");
+                console.log("removing" + button.getAttribute("id"));
+            }
         }
     }
 
     // increment the counter
+    if(calibrationComplete==1){
+        console.log(sector);
+        document.getElementById("button"+sector).classList.add("toggleable-class");
+    }
     sectorCounters[sector - 1]++;
     // if it has reached the threshold, add it officially
     if (calibrationComplete == 0 && mouseDown == 1) {
