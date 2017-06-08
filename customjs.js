@@ -28,8 +28,8 @@ function toggleStatus() {
 function unloadPIN() {
     var block = document.getElementById('PIN_section');
         block.style.display = 'none';
-    var block2 = document.getElementById('junk');
-        block2.style.display = 'none';
+   /* var block2 = document.getElementById('junk');
+        block2.style.display = 'none'; */
     var block3 = document.getElementById('buttonDiv');
         block3.style.display = 'none';
     var block4 = document.getElementById('overlay');
