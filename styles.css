@@ -272,9 +272,11 @@ body {
 .clear, .enter {
 	font-size: 1em;
 }
+/*
 .PINbutton:hover {
- 	box-shadow: #506CE8 0 0 1px 1px;
+ 	box-shadow: #D03027 0 0 5px 5px;
 }
+*/
 .PINbutton:active {
  	background: #506CE8;
 	color: #fff;
@@ -288,7 +290,7 @@ body {
 }
 
 .toggleable-class {
-	box-shadow: #506CE8 0 0 1px 1px;
+	box-shadow: #D03027 0 0 2px 2px;
 }
 
 .enter:hover {

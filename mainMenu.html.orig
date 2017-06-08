@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <title>Main Menu</title>
+</head>
+<body>        
+    
+    <div class="container-fluid" height="100%">
+    <div class="row">
+        <div class="navbar center" height = "1%" id = "mainMenuNavbar"> 
+            <img href="#home" src="c1_blue_logo.png" margin ="auto" bottom-border= "002f4d" padding="100px" top="0">
+    	</div>
+    </div>
+    </div>
+
+	<div id="wrapper">
+ 		<div id="left">
+			 <img href ="#home" src = "request_money_icon.png" id="reqMoney" margin = "auto">
+			 <h2><b>Get Cash</b></h2>
+		</div>    
+  		<div id="right">
+			 <img href ="#home" src = "check_balance_icon.png" id="checkBalance" margin = "auto">
+			 <h2><b>Check Balance</b></h2>
+		</div>
+	</div>
+
+	<div id = "wrapper">
+ 		<div id="bottomLeft">
+			 <h2 id = "fastCash"><b>Fast Cash $20</b></h2>
+		</div>    
+  		<div id="bottomRight">
+			 <h2 id = "moreActions"><b>More Actions</b></h2>
+			 <img href ="#home" src = "next.png" id="nextIcon">
+		</div>
+	</div>
+	
+    <div class="container-fluid" height="100%">
+    <div class="row">
+<<<<<<< HEAD
+        <div class="navbar" height = "1%" id = "bottomBar" background-color="#004977"> 
+            <img href="#home" src="c1_blue_logo.png" margin ="auto" top-border= "002f4d">
+=======
+        <div class="footer" id = "bottomBar"> 
+            <button type="button" class="btn"><b>Return Card</b></button>
+>>>>>>> 8c2a9bb25ac035749392812219deaae5585b5abd
+    	</div>
+    </div>
+    </div>
+       
+</body>
+</html>
