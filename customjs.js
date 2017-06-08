@@ -111,6 +111,7 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
     // match has been found
     alert("Congrats! Match has been found for " + secretCode);
     exit();
+
 }
 
 var addToArray = function(sector) {
@@ -142,10 +143,19 @@ var trackSector = function(sector) {
     for (i = 0; i < 9; i++) {
         if (i != sector - 1) {
             sectorCounters[i] = 0;
+            if(calibrationComplete==1){
+                var button = document.getElementById("button"+(i+1));
+                button.classList.remove("toggleable-class");
+                console.log("removing" + button.getAttribute("id"));
+            }
         }
     }
 
     // increment the counter
+    if(calibrationComplete==1){
+        console.log(sector);
+        document.getElementById("button"+sector).classList.add("toggleable-class");
+    }
     sectorCounters[sector - 1]++;
     // if it has reached the threshold, add it officially
     if (calibrationComplete == 0 && mouseDown == 1) {
@@ -166,9 +176,9 @@ var trackSector = function(sector) {
     if (calibrationComplete == 1) {
         //console.log("HERE");
 		document.body.onkeyup = function(e){
-	    if(e.keyCode == 32){
-			console.log("THE FUCK DUDE?!?");
-	    }
+	    if(e.keyCode == 32) {
+            console.log("THE FUCK DUDE?!?");
+        }
         addToArray(sector);
     }
 }

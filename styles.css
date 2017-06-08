@@ -183,6 +183,11 @@ body {
  	background: #ff3c41;
 	color: #fff;
 }
+
+.toggleable-class {
+	box-shadow: #506CE8 0 0 1px 1px;
+}
+
 .enter:hover {
  	box-shadow: #47cf73 0 0 1px 1px;
 }
