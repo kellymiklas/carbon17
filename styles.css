@@ -209,7 +209,7 @@ body {
 }
 
 .PINbutton {
-    float:left;
+/*    float:left;*/
     width: 80%;
     height: 20vw;
 /*    padding-bottom: 20%;  /*= width for a 1:1 aspect ratio*/ */
@@ -224,7 +224,6 @@ body {
 	border-radius: 50%;
 	font-size: 4vw;
 	text-align: center; 
-    float:left;
     overflow: hidden;
 }
 
@@ -242,5 +241,3 @@ body {
     margin-top:30px;
     margin-bottom: 30px
 }
-
-*{ border: 1px solid red; }
