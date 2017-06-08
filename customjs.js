@@ -19,6 +19,19 @@ function toggleStatus() {
     }
 }
 
+
+
+function unloadPIN() {
+    var block = document.getElementById('PIN_section');
+        block.style.display = 'none';
+    var block2 = document.getElementById('junk');
+        block2.style.display = 'none';
+    var block3 = document.getElementById('buttonDiv');
+        block3.style.display = 'none';
+    var block4 = document.getElementById('overlay');
+        block4.style.display = 'none';
+}
+
 function unloadCalibration() {
     var block = document.getElementById('calibration-screen');
         block.style.display = 'none';
@@ -40,7 +53,7 @@ document.body.onmouseup = function() {
 
 var domID = "calibrateImg";
 function showhide(domID) {
-    console.log(domID);
+    //console.log(domID);
     var img = document.getElementById(domID);
     if (img.style.visibility === 'hidden') {
         // Currently hidden, make it visible
@@ -109,7 +122,6 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
             tries++;
             if(tries > 3){
                 alert("You have exceded your tries. Now exiting.");
-                exit();
 				//Alert about being wrong, and explain that you card now has a hold on it.
             }
             else{
@@ -125,8 +137,10 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
         }
     }
     // match has been found
+    webgazer.end();
     alert("Congrats! Match has been found for " + secretCode);
-    exit();
+    unloadPIN("PIN_section");
+    loadSuccess();
 	//SUCCESS! Move them into the rest of the system.
 }
 
@@ -165,14 +179,14 @@ var trackSector = function(sector) {
             if(calibrationComplete==1){
                 var button = document.getElementById("button"+(i+1));
                 button.classList.remove("toggleable-class");
-                console.log("removing" + button.getAttribute("id"));
+                //console.log("removing" + button.getAttribute("id"));
             }
         }
     }
 
     // increment the counter
     if(calibrationComplete==1){
-        console.log(sector);
+        //console.log(sector);
         document.getElementById("button"+sector).classList.add("toggleable-class");
     }
     sectorCounters[sector - 1]++;
@@ -327,6 +341,17 @@ var main = function() {
 window.onbeforeunload = function() {
     webgazer.end(); //Uncomment if you want to save the data even if you reload the page.
     window.localStorage.clear(); //Comment out if you want to save data across different sessions
+}
+
+var loadSuccess = function() {
+    var xhr= new XMLHttpRequest();
+    xhr.open('GET', 'mainMenu.html', true);
+    xhr.onreadystatechange= function() {
+        if (this.readyState!==4) return;
+        if (this.status!==200) return;
+        document.getElementById('success').innerHTML= this.responseText;
+    };
+    xhr.send();
 }
 
 var loadPIN = function() {
