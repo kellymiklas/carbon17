@@ -96,6 +96,7 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
             if(tries > 3){
                 alert("You have exceded your tries. Now exiting.");
                 exit();
+				//Alert about being wrong, and explain that you card now has a hold on it.
             }
             else{
                 // resetEyes();
@@ -104,6 +105,7 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
                 addedCounter = 0;
                 counter = 0;
                 sectorCounters[sector-1] = 0;
+				//Alert about being wrong and forgetting the code.
                 return;
             }
         }
@@ -111,6 +113,7 @@ var compareCodes = function(secretCode, sectorsVisited, sector) {
     // match has been found
     alert("Congrats! Match has been found for " + secretCode);
     exit();
+	//SUCCESS! Move them into the rest of the system.
 }
 
 var addToArray = function(sector) {
@@ -131,6 +134,7 @@ var checkIfCalibrationComplete = function(calibratedSectors) {
             return false;
         }
     }
+	//Clean up this alert - AP
     alert("Calibration complete. Please enter passcode.");
     calibrationComplete = 1;
     removeLayers();
@@ -138,7 +142,7 @@ var checkIfCalibrationComplete = function(calibratedSectors) {
 }
 
 var trackSector = function(sector) {
-    // reset every value except for the one we're currently one
+    // reset every value except for the one we're currently on
     for (i = 0; i < 9; i++) {
         if (i != sector - 1) {
             sectorCounters[i] = 0;
@@ -158,7 +162,7 @@ var trackSector = function(sector) {
             loadPIN();
             calibratedSectors[sector-1]++;
             if(checkIfCalibrationComplete(calibratedSectors) == true){
-                console.log("calibration complete");
+                console.log("Calibration Complete");
             }
         }
         // mouseDown--;
@@ -167,7 +171,7 @@ var trackSector = function(sector) {
         //console.log("HERE");
 		document.body.onkeyup = function(e){
 	    if(e.keyCode == 32){
-			console.log("THE FUCK DUDE?!?");
+			console.log("Sector selected.");
 	    }
         addToArray(sector);
     }
@@ -238,6 +242,7 @@ var main = function() {
     var leftDist = '0px';
 
     var setup = function() {
+		//VIDEO SET UP AND FORMATTING
         var video = document.getElementById('webgazerVideoFeed');
         video.style.display = 'block';
         video.style.position = 'absolute';
@@ -250,6 +255,7 @@ var main = function() {
         webgazer.params.imgWidth = width;
         webgazer.params.imgHeight = height;
 
+		//GREEN FACE OVERLAY
         var overlay = document.createElement('canvas');
         overlay.id = 'overlay';
         overlay.style.position = 'absolute';
