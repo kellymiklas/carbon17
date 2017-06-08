@@ -8,7 +8,7 @@
 	height: 33%;
 	table-layout: fixed;
 	display: table;
-	margin-left: none;
+	margin-left: 0;
 }
 
 .bodyWrapper ul li {
@@ -27,7 +27,8 @@
 .fullBodyImg {
 	height: 100%;
 	width: 100%;
-	
+	vertical-align: top;
+    display:block;
 }
 
 .fullBodyImg img {
@@ -68,6 +69,7 @@
 	max-height: 10%;
 }
 
+/*
 c1_blue0 {
     background-color: #004977;
 }
@@ -99,19 +101,22 @@ c1_green1 {
 h {
     background-color: #00ff00;
 }
-
+*/
 .navbar {
-/*    overflow: hidden;*/
+    overflow: hidden;
     background-color: #004977;
     position: fixed; /* Set the navbar to fixed position */
     top: 37px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+
 }
+
 
 #bottomBar {
     overflow: hidden;
     background-color: #506CE8;
     width: 100%; /* Full width */
+	margin-bottom: 0;
 }
 
 .main {
@@ -162,11 +167,13 @@ h {
 	background-color: #d5d5d5;
 }
 
+/*
 accepted {
     overflow: hidden;
     background-color: #002f4d;
-    width: 100%; /* Full width */
+    width: 100%; /* Full width
 }
+*/
 
 img {
     display: block;
@@ -251,8 +258,8 @@ body {
     float:left;
     width: 80%;
     height: 20vw;
-/*    padding-bottom: 20%;  /*= width for a 1:1 aspect ratio*/ */
-    margin:1%;
+/*    padding-bottom: 20%;  /*= width for a 1:1 aspect ratio*/
+    margin: 1%;
     background: #ededed;
 	color: #7e7e7e;
 	border: none;
@@ -264,6 +271,7 @@ body {
 	font-size: 4vw;
 	text-align: center; 
     float:left;
+    overflow: hidden;
 }
 
 .PINbox {
@@ -273,9 +281,12 @@ body {
 	font-size: 6em;
 	text-align: center;
 	border: 1px solid #d5d5d5;
+    overflow: hidden;
 }
 
 .PINbuffer { 
     margin-top:30px;
     margin-bottom: 30px
 }
+
+/*{ border: 1px solid red; }

@@ -17,6 +17,11 @@ function toggleStatus() {
     }
 }
 
+function unloadCalibration() {
+    var block = document.getElementById('calibration-screen');
+        block.style.display = 'none';
+}
+
 function resetEyes() {
     for(var j = 1; j < 4; j++){
         document.getElementById('statusImg'+j).src = "https://d30y9cdsu7xlg0.cloudfront.net/png/204724-200.png";
@@ -137,7 +142,9 @@ var checkIfCalibrationComplete = function(calibratedSectors) {
 	//Clean up this alert - AP
     alert("Calibration complete. Please enter passcode.");
     calibrationComplete = 1;
+    unloadCalibration();
     removeLayers();
+    loadPIN();
     return true;
 }
 
@@ -168,7 +175,6 @@ var trackSector = function(sector) {
             removeLayers();
             string = domID + sector;
             showhide(string);
-            loadPIN();
             calibratedSectors[sector-1]++;
             if(checkIfCalibrationComplete(calibratedSectors) == true){
                 console.log("Calibration Complete");
