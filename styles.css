@@ -25,7 +25,6 @@
 }
 
 .fullBodyImg {
-	height: 100%;
 	width: 100%;
 	vertical-align: top;
     display:block;
@@ -104,6 +103,7 @@ h {
 */
 
 #buttonDiv{
+	position: relative;
 	margin: auto;
 	height: 40px;
 	width: 100px;
@@ -112,8 +112,9 @@ h {
 .navbar {
     overflow: hidden;
     background-color: #004977;
-    position: fixed; /* Set the navbar to fixed position */
+    position: relative; /* Set the navbar to fixed position */
     top: 37px; /* Position the navbar at the top of the page */
+	margin-bottom: 0px !important;
     width: 100%; /* Full width */
 	border-bottom-color: white !important;
 	border-bottom-width: 2px !important;
@@ -277,6 +278,8 @@ stroke-outer {
 
 body {
 	background-image: url("background.jpg") !important;
+	width: 100%;
+	height: 100%;
 }
 
 #PINform input:focus,

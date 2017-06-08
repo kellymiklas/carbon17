@@ -103,6 +103,7 @@ var initiateCalibration = function() {
 var removeIndexDivs = function() {
     document.getElementById("calibrate").remove();
 	document.getElementById("indexNavbar").remove();
+	document.getElementById("buttonDiv").remove();
     document.getElementById("junk").remove();
 }
 
