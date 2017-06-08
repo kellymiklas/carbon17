@@ -141,6 +141,22 @@ h {
 	padding-right: 25px;
 }
 
+#logo{
+	margin-bottom: .5%;
+	float: right;
+	margin-right: 3%;
+	opacity: 1 !important;
+	height: 70px;
+	padding-left: 25px;
+	padding-right: 15px;
+	border-radius: 4px;
+}
+
+#logohome{
+	opacity: 1 !important;
+	height: 70px;
+}
+
 .row button:hover{
 	background-color: #ff2424;
 }
