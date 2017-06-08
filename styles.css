@@ -8,7 +8,7 @@
 	height: 33%;
 	table-layout: fixed;
 	display: table;
-	margin-left: none;
+	margin-left: 0;
 }
 
 .bodyWrapper ul li {
@@ -69,6 +69,7 @@
 	max-height: 10%;
 }
 
+/*
 c1_blue0 {
     background-color: #004977;
 }
@@ -102,12 +103,13 @@ h {
 }
 
 .navbar {
-/*    overflow: hidden;*/
+/*    overflow: hidden;
     background-color: #004977;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed; /* Set the navbar to fixed position
+    top: 0; /* Position the navbar at the top of the page
+    width: 100%; /* Full width
 }
+*/
 
 .sidebar {
     overflow: hidden;
@@ -123,11 +125,13 @@ h {
     width: 100%; /* Full width */
 }
 
+/*
 accepted {
     overflow: hidden;
     background-color: #002f4d;
-    width: 100%; /* Full width */
+    width: 100%; /* Full width
 }
+*/
 
 img {
     display: block;
@@ -212,8 +216,8 @@ body {
     float:left;
     width: 80%;
     height: 20vw;
-/*    padding-bottom: 20%;  /*= width for a 1:1 aspect ratio*/ */
-    margin:1%;
+/*    padding-bottom: 20%;  /*= width for a 1:1 aspect ratio*/
+    margin: 1%;
     background: #ededed;
 	color: #7e7e7e;
 	border: none;
@@ -243,4 +247,4 @@ body {
     margin-bottom: 30px
 }
 
-*{ border: 1px solid red; }
+/*{ border: 1px solid red; }
