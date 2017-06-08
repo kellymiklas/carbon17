@@ -98,6 +98,7 @@ var alertCustom = function(wait, message) {
     document.getElementById("alertCustom").textContent=message;
     console.log(document.getElementById("alertCustom").textContent);
     showhide("alertCustom");
+	
 }
 
 var compareCodes = function(secretCode, sectorsVisited, sector) {
