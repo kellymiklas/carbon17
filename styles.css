@@ -312,10 +312,11 @@ body {
 
 .PINbutton {
 /*    float:left;*/
-    width: 80%;
-    height: 20vw;
+    margin: auto;
+    width: 40%;
+    height: 10vw;
 /*    padding-bottom: 20%;  /*= width for a 1:1 aspect ratio*/
-    margin: 1%;
+/*    margin: 1%;*/
     background: #ededed;
 	color: #7e7e7e;
 	border: none;
@@ -340,6 +341,10 @@ body {
 }
 
 .PINbuffer { 
-    margin-top:30px;
-    margin-bottom: 30px
+    margin-top:60px;
+    margin-bottom: 60px;
+}
+
+.PINtext    {
+    vertical-align: middle;
 }
