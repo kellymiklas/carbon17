@@ -9,13 +9,17 @@ function toggleStatus() {
     counter++;
     if (counter == 1) {
         showhide("a1");
+        showhide("s1");
     } else if (counter == 2) {
         showhide("a2");
+        showhide("s2");
     } else if (counter == 3) {
         showhide("a3");
+        showhide("s3");
     }
     else if (counter == 4) {
         showhide("a4");
+        showhide("s4");
     }
 }
 
@@ -110,10 +114,9 @@ var initiateCalibration = function() {
 }
 
 var removeIndexDivs = function() {
-    showhide("junk");
-    showhide("indexNavbar");
-    showhide("calibrate");
-    
+    document.getElementById("calibrate").remove();
+	document.getElementById("indexNavbar").remove();
+    document.getElementById("junk").remove();
 }
 
 var compareCodes = function(secretCode, sectorsVisited, sector) {
